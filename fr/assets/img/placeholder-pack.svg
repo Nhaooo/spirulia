@@ -1,0 +1,11 @@
+<svg width="600" height="600" viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="600" height="600" fill="#F4F1E6"/>
+<circle cx="300" cy="300" r="200" stroke="#2F5B45" stroke-width="2" stroke-opacity="0.1"/>
+<circle cx="300" cy="300" r="160" stroke="#2F5B45" stroke-width="1" stroke-opacity="0.2"/>
+<rect x="200" y="180" width="200" height="240" rx="4" stroke="#2F5B45" stroke-width="2"/>
+<path d="M200 220 L400 220" stroke="#2F5B45" stroke-width="1"/>
+<path d="M260 300 L340 300" stroke="#2F5B45" stroke-width="1"/>
+<path d="M280 320 L320 320" stroke="#2F5B45" stroke-width="1"/>
+<path d="M180 380 Q300 440 420 380" stroke="#C9B07A" stroke-width="2" fill="none" opacity="0.5"/>
+<text x="300" y="500" font-family="serif" font-size="24" fill="#2F5B45" text-anchor="middle" letter-spacing="0.1em">SPIRULIA</text>
+</svg>

@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique - Spirulia</title>
+    <meta name="description"
+        content="Toute la gamme Spirulia : spiruline en poudre aromatisée, packs découverte et accessoires.">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" href="assets/img/favicon.ico">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container nav-wrapper">
+            <a href="index.html" class="logo">SPIRULIA</a>
+            <button class="menu-toggle" aria-label="Menu">☰</button>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="shop.html" style="opacity: 1; border-bottom: 2px solid var(--deep-green);">Shop</a>
+                    </li>
+                    <li><a href="how-to-use.html">Utilisation</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <nav class="lang-switch">
+                    <a href="#" class="active">FR</a>
+                    <a href="../en/shop.html">EN</a>
+                    <a href="../ja/shop.html">JA</a>
+                </nav>
+                <a href="where-to-buy.html" class="btn btn-small btn-primary">Où acheter</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="section container" style="margin-top: 60px;">
+        <div class="text-center" style="margin-bottom: 4rem;">
+            <h1>La Boutique</h1>
+            <p>Explorez notre collection complète.</p>
+        </div>
+
+        <!-- Filters could go here, keeping it simple as per request -->
+
+        <div class="product-grid">
+            <!-- 5 Flavors -->
+            <article class="product-card">
+                <a href="product-naturel.html">
+                    <div class="card-img"><img src="assets/img/pack-naturel.png" alt="Naturel"></div>
+                    <span class="flavor-badge" style="background-color: var(--color-naturel);"></span>
+                    <h3 class="card-title">Naturel</h3>
+                    <p class="card-desc">L'authenticité pure.</p>
+                    <span class="card-price">À partir de 12,99€</span>
+                    <span class="btn btn-small btn-outline">Acheter</span>
+                </a>
+            </article>
+
+            <article class="product-card">
+                <a href="product-vanille.html">
+                    <div class="card-img"><img src="assets/img/pack-vanille.png" alt="Vanille"></div>
+                    <span class="flavor-badge" style="background-color: var(--color-vanille);"></span>
+                    <h3 class="card-title">Vanille</h3>
+                    <p class="card-desc">Douceur des îles.</p>
+                    <span class="card-price">À partir de 12,99€</span>
+                    <span class="btn btn-small btn-outline">Acheter</span>
+                </a>
+            </article>
+
+            <article class="product-card">
+                <a href="product-gingembre.html">
+                    <div class="card-img"><img src="assets/img/pack-gingembre.png" alt="Gingembre"></div>
+                    <span class="flavor-badge" style="background-color: var(--color-gingembre);"></span>
+                    <h3 class="card-title">Gingembre</h3>
+                    <p class="card-desc">Une touche épicée.</p>
+                    <span class="card-price">À partir de 12,99€</span>
+                    <span class="btn btn-small btn-outline">Acheter</span>
+                </a>
+            </article>
+
+            <article class="product-card">
+                <a href="product-chocolat.html">
+                    <div class="card-img"><img src="assets/img/pack-chocolat.png" alt="Chocolat"></div>
+                    <span class="flavor-badge" style="background-color: var(--color-chocolat);"></span>
+                    <h3 class="card-title">Chocolat</h3>
+                    <p class="card-desc">Gourmandise intense.</p>
+                    <span class="card-price">À partir de 12,99€</span>
+                    <span class="btn btn-small btn-outline">Acheter</span>
+                </a>
+            </article>
+
+            <article class="product-card">
+                <a href="product-citron-yuzu.html">
+                    <div class="card-img"><img src="assets/img/pack-citron-yuzu.png" alt="Citron Yuzu"></div>
+                    <span class="flavor-badge" style="background-color: var(--color-citron);"></span>
+                    <h3 class="card-title">Citron Yuzu</h3>
+                    <p class="card-desc">Fraîcheur acidulée.</p>
+                    <span class="card-price">À partir de 12,99€</span>
+                    <span class="btn btn-small btn-outline">Acheter</span>
+                </a>
+            </article>
+
+            <!-- Packs -->
+            <article class="product-card">
+                <a href="pack-decouverte.html">
+                    <div class="card-img"><img src="assets/img/pack-decouverte.png" alt="Pack Découverte"></div>
+                    <h3 class="card-title">Pack Découverte</h3>
+                    <p class="card-desc">Idéal pour s'initier aux saveurs.</p>
+                    <span class="card-price">10,99€</span>
+                    <span class="btn btn-primary">Acheter</span>
+                </a>
+            </article>
+
+            <article class="product-card">
+                <a href="kit-boisson.html">
+                    <div class="card-img"><img src="assets/img/kit.png" alt="Kit Boisson"></div>
+                    <h3 class="card-title">Kit Boisson</h3>
+                    <p class="card-desc">L'équipement complet.</p>
+                    <span class="card-price">39,99€</span>
+                    <span class="btn btn-primary">Acheter</span>
+                </a>
+            </article>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h4>SPIRULIA</h4>
+                <p>Naturellement vôtre.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <a href="shop.html">Shop</a>
+                <a href="faq.html">FAQ</a>
+            </div>
+            <div class="footer-col">
+                <h4>Aide</h4>
+                <a href="contact.html">Contact</a>
+                <a href="where-to-buy.html">Où acheter</a>
+            </div>
+        </div>
+        <div class="container legal-note">
+            <p>Complément alimentaire. Ne se substitue pas à une alimentation variée.</p>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" id="buy-modal" aria-hidden="true">
+        <div class="modal">
+            <button class="modal-close" aria-label="Fermer">&times;</button>
+            <h2>Où acheter ?</h2>
+            <p>Retrouvez nos produits chez nos partenaires.</p>
+<p style="margin-bottom: 1rem;">Commandez directement sur ce site ou retrouvez-nous chez :</p><div class="modal-links">
+                
+                <a href="#" class="modal-btn">Biocoop</a>
+                
+                <a href="mailto:sales@spirulia.com" class="modal-btn">Contact Pro</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

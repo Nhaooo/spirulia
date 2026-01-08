@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問合せ - Spirulia</title>
+    <meta name="description" content="Spiruliaチームへのお問い合わせ。">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" href="assets/img/favicon.ico">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container nav-wrapper">
+            <a href="index.html" class="logo">SPIRULIA</a>
+            <button class="menu-toggle" aria-label="Menu">☰</button>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="shop.html">ショップ</a></li>
+                    <li><a href="how-to-use.html">使い方</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html" style="opacity: 1; border-bottom: 2px solid var(--deep-green);">お問合せ</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <nav class="lang-switch">
+                    <a href="../fr/contact.html">FR</a>
+                    <a href="../en/contact.html">EN</a>
+                    <a href="#" class="active">JA</a>
+                </nav>
+                <a href="where-to-buy.html" class="btn btn-small btn-primary">購入先</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="section container" style="margin-top: 60px; max-width: 600px;">
+        <div class="text-center" style="margin-bottom: 4rem;">
+            <h1>お問い合わせ</h1>
+            <p class="hero-sub">ご質問ですか？ ご提案ですか？ お気軽にお書きください。</p>
+        </div>
+
+        <form onsubmit="event.preventDefault(); alert('メッセージ送信（シミュレーション）');" style="display: grid; gap: 1.5rem;">
+            <div style="display: grid; gap: 0.5rem;">
+                <label for="name" style="font-weight: 500;">お名前</label>
+                <input type="text" id="name" required
+                    style="padding: 1rem; border: 1px solid var(--light-gray); border-radius: 4px; font-family: inherit;">
+            </div>
+
+            <div style="display: grid; gap: 0.5rem;">
+                <label for="email" style="font-weight: 500;">メールアドレス</label>
+                <input type="email" id="email" required
+                    style="padding: 1rem; border: 1px solid var(--light-gray); border-radius: 4px; font-family: inherit;">
+            </div>
+
+            <div style="display: grid; gap: 0.5rem;">
+                <label for="message" style="font-weight: 500;">メッセージ</label>
+                <textarea id="message" rows="5" required
+                    style="padding: 1rem; border: 1px solid var(--light-gray); border-radius: 4px; font-family: inherit;"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="justify-self: start;">送信</button>
+        </form>
+
+        <div style="margin-top: 4rem; text-align: center; font-size: 0.9rem; color: var(--warm-gray);">
+            <p>Email: hello@spirulia.jp</p>
+            <p>Tel: +33 1 23 45 67 89</p>
+        </div>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h4>SPIRULIA</h4>
+                <p>自然をあなたに。</p>
+            </div>
+            <div class="footer-col">
+                <h4>ナビゲーション</h4>
+                <a href="shop.html">ショップ</a>
+                <a href="faq.html">FAQ</a>
+            </div>
+            <div class="footer-col">
+                <h4>ヘルプ</h4>
+                <a href="contact.html">お問合せ</a>
+                <a href="where-to-buy.html">購入先</a>
+            </div>
+        </div>
+        <div class="container legal-note">
+            <p>栄養補助食品。バランスの取れた食生活の代わりにはなりません。</p>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" id="buy-modal" aria-hidden="true">
+        <div class="modal">
+            <button class="modal-close" aria-label="閉じる">&times;</button>
+            <h2>購入先</h2>
+            <p>パートナー店舗で製品をお求めいただけます。</p>
+<p style="margin-bottom: 1rem;">このサイトで直接注文するか、以下の店舗で見つけてください：</p><div class="modal-links">
+                
+                <a href="#" class="modal-btn">Biocoop</a>
+                
+                <a href="mailto:sales@spirulia.com" class="modal-btn">法人窓口</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

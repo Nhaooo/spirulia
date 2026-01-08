@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spiruline Gingembre - Spirulia</title>
+    <meta name="description" content="Spiruline parfum gingembre. Vitalité et piquant.">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" href="assets/img/favicon.ico">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container nav-wrapper">
+            <a href="index.html" class="logo">SPIRULIA</a>
+            <button class="menu-toggle" aria-label="Menu">☰</button>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="how-to-use.html">Utilisation</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <nav class="lang-switch">
+                    <a href="#" class="active">FR</a>
+                    <a href="../en/product-gingembre.html">EN</a>
+                    <a href="../ja/product-gingembre.html">JA</a>
+                </nav>
+                <a href="where-to-buy.html" class="btn btn-small btn-primary">Où acheter</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="section container" style="margin-top: 60px;">
+        <a href="shop.html"
+            style="font-size: 0.9rem; color: var(--warm-gray); display: block; margin-bottom: 2rem;">&larr; Retour à la
+            boutique</a>
+
+        <div class="product-detail">
+            <div class="pd-image">
+                <div
+                    style="position: absolute; width: 300px; height: 300px; border-radius: 50%; background: var(--color-gingembre); opacity: 0.1; z-index: 0;">
+                </div>
+                <img src="assets/img/pack-gingembre.png" alt="Spiruline Gingembre"
+                    style="position: relative; z-index: 1;">
+            </div>
+
+            <div class="pd-info">
+                <h1 style="color: var(--color-gingembre);">NO.3 Gingembre</h1>
+                <p class="hero-sub">Un boost d'énergie aux notes épicées pour réveiller votre organisme.</p>
+
+                <div class="pd-price">12,99€</div>
+
+                <div class="size-selector">
+                    <span class="size-label">Taille</span>
+                    <div class="size-options">
+                        <button class="size-btn active" data-price="12,99€">30g</button>
+                        <button class="size-btn" data-price="15,99€">60g</button>
+                        <button class="size-btn" data-price="24,99€">100g</button>
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 2rem;">
+                    <button class="btn btn-primary js-buy-btn" style="width: 100%; max-width: 300px;">Acheter
+                        maintenant</button>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">Description <span class="icon">+</span></button>
+                    <div class="accordion-content">
+                        <p>La force du gingembre associée aux bienfaits de la spiruline. Une combinaison détonnante pour
+                            le tonus.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Ingrédients <span class="icon">+</span></button>
+                    <div class="accordion-content">
+                        <p>Spiruline (Arthrospira platensis), poudre de gingembre.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Utilisation <span class="icon">+</span></button>
+                    <div class="accordion-content">
+                        <p>Idéal en jus détox le matin ou en smoothie énergisant.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Livraison <span class="icon">+</span></button>
+                    <div class="accordion-content">
+                        <p>Expédition sous 24h. Livraison offerte.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h4>SPIRULIA</h4>
+                <p>Naturellement vôtre.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <a href="shop.html">Shop</a>
+                <a href="faq.html">FAQ</a>
+            </div>
+            <div class="footer-col">
+                <h4>Aide</h4>
+                <a href="contact.html">Contact</a>
+                <a href="where-to-buy.html">Où acheter</a>
+            </div>
+        </div>
+        <div class="container legal-note">
+            <p>Complément alimentaire. Ne se substitue pas à une alimentation variée.</p>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" id="buy-modal" aria-hidden="true">
+        <div class="modal">
+            <button class="modal-close" aria-label="Fermer">&times;</button>
+            <h2>Où acheter ?</h2>
+            <p>Retrouvez nos produits chez nos partenaires.</p>
+<p style="margin-bottom: 1rem;">Commandez directement sur ce site ou retrouvez-nous chez :</p><div class="modal-links">
+                
+                <a href="#" class="modal-btn">Biocoop</a>
+                
+                <a href="mailto:sales@spirulia.com" class="modal-btn">Contact Pro</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

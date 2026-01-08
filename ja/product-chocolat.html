@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>チョコレートスピルリナ - Spirulia</title>
+    <meta name="description" content="チョコレート風味のスピルリナ。健康的な楽しみ。">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" href="assets/img/favicon.ico">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container nav-wrapper">
+            <a href="index.html" class="logo">SPIRULIA</a>
+            <button class="menu-toggle" aria-label="Menu">☰</button>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="shop.html">ショップ</a></li>
+                    <li><a href="how-to-use.html">使い方</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">お問合せ</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <nav class="lang-switch">
+                    <a href="../fr/product-chocolat.html">FR</a>
+                    <a href="../en/product-chocolat.html">EN</a>
+                    <a href="#" class="active">JA</a>
+                </nav>
+                <a href="where-to-buy.html" class="btn btn-small btn-primary">購入先</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="section container" style="margin-top: 60px;">
+        <a href="shop.html"
+            style="font-size: 0.9rem; color: var(--warm-gray); display: block; margin-bottom: 2rem;">&larr; ショップに戻る</a>
+
+        <div class="product-detail">
+            <div class="pd-image">
+                <div
+                    style="position: absolute; width: 300px; height: 300px; border-radius: 50%; background: var(--color-chocolat); opacity: 0.1; z-index: 0;">
+                </div>
+                <img src="assets/img/pack-chocolat.png" alt="チョコレートスピルリナ" style="position: relative; z-index: 1;">
+            </div>
+
+            <div class="pd-info">
+                <h1 style="color: var(--color-chocolat);">NO.4 チョコレート</h1>
+                <p class="hero-sub">カカオの喜び、罪悪感なし。</p>
+
+                <div class="pd-price">€25.99</div>
+
+                <div class="size-selector">
+                    <span class="size-label">サイズ</span>
+                    <div class="size-options">
+                        <button class="size-btn active" data-price="€25.99">30g</button>
+                        <button class="size-btn" data-price="€21.99">60g</button>
+                        <button class="size-btn" data-price="€39.99">100g</button>
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 2rem;">
+                    <button class="btn btn-primary js-buy-btn" style="width: 100%; max-width: 300px;">今すぐ購入</button>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">説明 <span class="icon">+</span></button>
+                    <div class="accordion-content">
+                        <p>低脂肪ココアで風味付けされたスピルリナ。健康と喜びを両立したい方に。</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">原材料 <span class="icon">+</span></button>
+                    <div class="accordion-content">
+                        <p>スピルリナ (Arthrospira platensis)、ココアパウダー。</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">使い方 <span class="icon">+</span></button>
+                    <div class="accordion-content">
+                        <p>ホットミルクやデザートにかけてお楽しみください。</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">配送 <span class="icon">+</span></button>
+                    <div class="accordion-content">
+                        <p>24時間以内に発送。送料無料。</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h4>SPIRULIA</h4>
+                <p>自然をあなたに。</p>
+            </div>
+            <div class="footer-col">
+                <h4>ナビゲーション</h4>
+                <a href="shop.html">ショップ</a>
+                <a href="faq.html">FAQ</a>
+            </div>
+            <div class="footer-col">
+                <h4>ヘルプ</h4>
+                <a href="contact.html">お問合せ</a>
+                <a href="where-to-buy.html">購入先</a>
+            </div>
+        </div>
+        <div class="container legal-note">
+            <p>栄養補助食品。バランスの取れた食生活の代わりにはなりません。</p>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" id="buy-modal" aria-hidden="true">
+        <div class="modal">
+            <button class="modal-close" aria-label="閉じる">&times;</button>
+            <h2>購入先</h2>
+            <p>パートナー店舗で製品をお求めいただけます。</p>
+<p style="margin-bottom: 1rem;">このサイトで直接注文するか、以下の店舗で見つけてください：</p><div class="modal-links">
+                
+                <a href="#" class="modal-btn">Biocoop</a>
+                
+                <a href="mailto:sales@spirulia.com" class="modal-btn">法人窓口</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

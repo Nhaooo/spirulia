@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spirulia - Naturellement vôtre</title>
+    <meta name="description" content="Spirulia - Spiruline premium française. Découvrez nos saveurs uniques.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #f5f3ed 0%, #ffffff 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .intro-container {
+            text-align: center;
+            position: relative;
+            z-index: 10;
+        }
+
+        .logo {
+            font-size: 4rem;
+            font-weight: 300;
+            letter-spacing: 0.3em;
+            color: #2F5B45;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1.2s ease-out forwards;
+            margin-bottom: 2rem;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            color: #666;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1.2s ease-out 0.3s forwards;
+            margin-bottom: 3rem;
+            font-weight: 300;
+            letter-spacing: 0.05em;
+        }
+
+        .enter-btn {
+            display: inline-block;
+            padding: 1rem 3rem;
+            background: #2F5B45;
+            color: #f5f3ed;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1.2s ease-out 0.6s forwards;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 10px 30px rgba(47, 91, 69, 0.2);
+        }
+
+        .enter-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(47, 91, 69, 0.35);
+            background: #234635;
+        }
+
+        /* Animated background circles */
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.08;
+            animation: float 20s infinite ease-in-out;
+        }
+
+        .circle-1 {
+            width: 400px;
+            height: 400px;
+            background: #2F5B45;
+            top: -100px;
+            left: -100px;
+            animation-delay: 0s;
+        }
+
+        .circle-2 {
+            width: 300px;
+            height: 300px;
+            background: #C9B07A;
+            bottom: -80px;
+            right: -80px;
+            animation-delay: 2s;
+        }
+
+        .circle-3 {
+            width: 200px;
+            height: 200px;
+            background: #2F5B45;
+            top: 50%;
+            right: 10%;
+            animation-delay: 4s;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translate(0, 0) scale(1);
+            }
+
+            33% {
+                transform: translate(30px, -30px) scale(1.1);
+            }
+
+            66% {
+                transform: translate(-20px, 20px) scale(0.9);
+            }
+        }
+
+        /* Particles decoration */
+        .particle {
+            position: absolute;
+            width: 3px;
+            height: 3px;
+            background: #2F5B45;
+            border-radius: 50%;
+            opacity: 0;
+            animation: particle-float 8s infinite ease-in-out;
+        }
+
+        .particle:nth-child(1) {
+            left: 20%;
+            animation-delay: 0s;
+        }
+
+        .particle:nth-child(2) {
+            left: 40%;
+            animation-delay: 1s;
+        }
+
+        .particle:nth-child(3) {
+            left: 60%;
+            animation-delay: 2s;
+        }
+
+        .particle:nth-child(4) {
+            left: 80%;
+            animation-delay: 3s;
+        }
+
+        @keyframes particle-float {
+
+            0%,
+            100% {
+                opacity: 0;
+                transform: translateY(100vh);
+            }
+
+            10%,
+            90% {
+                opacity: 0.3;
+            }
+
+            50% {
+                transform: translateY(-100vh);
+            }
+        }
+
+        /* Loading effect on click */
+        .enter-btn.clicked {
+            animation: pulse 0.6s ease-out;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 2.5rem;
+            }
+
+            .tagline {
+                font-size: 1rem;
+            }
+
+            .enter-btn {
+                padding: 0.875rem 2.5rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Background decorative circles -->
+    <div class="circle circle-1"></div>
+    <div class="circle circle-2"></div>
+    <div class="circle circle-3"></div>
+
+    <!-- Floating particles -->
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+
+    <div class="intro-container">
+        <h1 class="logo">SPIRULIA</h1>
+        <p class="tagline">Naturellement vôtre.</p>
+        <a href="fr/index.html" class="enter-btn" id="enterBtn">Découvrir</a>
+    </div>
+
+    <script>
+        // Add click animation
+        document.getElementById('enterBtn').addEventListener('click', function (e) {
+            this.classList.add('clicked');
+
+            // Optional: Add a slight delay before navigation for animation
+            e.preventDefault();
+            setTimeout(() => {
+                window.location.href = 'fr/index.html';
+            }, 400);
+        });
+
+        // Preload next page
+        const link = document.createElement('link');
+        link.rel = 'prefetch';
+        link.href = 'fr/index.html';
+        document.head.appendChild(link);
+    </script>
+</body>
+
+</html>
